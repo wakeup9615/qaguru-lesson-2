@@ -14,7 +14,7 @@ public class JUnit5Examples {
         System.out.println("===== Starting 1 before All tests");
     }
 
-    @BeforeEach// выполняется 1 раз перед каждыми тестами
+    @BeforeEach// выполняется 1 раз перед каждым тестом
     void beforeEach() {
         System.out.println("======== Starting 1 before Every test");
     }
