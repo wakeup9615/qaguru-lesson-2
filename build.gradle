@@ -1,0 +1,18 @@
+plugins {
+    id 'java-library' //проект на языке java
+}
+
+repositories {
+    mavenCentral() //хранилище артефактов, откуда выкачиваем зависимости
+}
+
+dependencies { //бибилиоетке с зависимостями
+    testImplementation( //то, что доступно из папки test
+            "com.codeborne:selenide:6.5.0",
+            "org.junit.jupiter:junit-jupiter:5.8.2" //аннотация @Test
+    )
+}
+
+tasks.withType(Test) {
+    useJUnitPlatform()
+}
