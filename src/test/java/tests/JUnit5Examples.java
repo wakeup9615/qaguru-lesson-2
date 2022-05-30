@@ -2,6 +2,8 @@ package tests;
 
 import org.junit.jupiter.api.*;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 public class JUnit5Examples {
 
     @BeforeAll // выполняется 1 раз перед всеми тестами
@@ -27,6 +29,7 @@ public class JUnit5Examples {
     @Test
     void secondTest() {
         System.out.println("========== Started secondTest");
+        assertEquals(2,3); // сравнение в junit5
     }
 
     @AfterEach // выполняется 1 раз после каждого теста
