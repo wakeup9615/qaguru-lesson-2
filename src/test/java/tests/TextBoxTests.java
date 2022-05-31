@@ -13,6 +13,7 @@ public class TextBoxTests {
     static void beforeAll() {
         Configuration.baseUrl = "https://demoqa.com";
         Configuration.browserSize = "1920x1080"; //задать размер окна
+        //Configuration.holdBrowserOpen = true; //чтобы бразузер после теста не закрывался
     }
 
     @Test

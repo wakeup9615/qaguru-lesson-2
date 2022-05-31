@@ -14,5 +14,5 @@ dependencies { //бибилиоетке с зависимостями
 }
 
 tasks.withType(Test) {
-    useJUnitPlatform()
+    useJUnitPlatform() //говорим градлу какой используем фреймворк для тестирования
 }
